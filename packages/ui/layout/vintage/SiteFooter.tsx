@@ -1,10 +1,10 @@
 import React from "react";
-import { Shell } from "@turbocell/shadcn";
-import { Icons } from "@turbocell/utils/icons";
+import { Shell } from "@vintage/shadcn";
+import { Icons } from "@vintage/utils/icons";
 import Link from "next/link";
-import { cn } from "@turbocell/utils/utils";
-import { buttonVariants } from "@turbocell/shadcn/ui";
-import { Company, mySocials } from "@turbocell/utils";
+import { cn } from "@vintage/utils/utils";
+import { buttonVariants } from "@vintage/shadcn/ui";
+import { Company, mySocials } from "@vintage/utils";
 
 export const SiteFooter = () => {
   return (

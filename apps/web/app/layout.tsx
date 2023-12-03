@@ -1,12 +1,12 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Toaster } from "@turbocell/shadcn";
+import { Toaster } from "@vintage/shadcn";
 import { fontSans, fontMono } from "@/lib/fonts";
-import { ThemeProvider } from "@turbocell/ui/components/ThemeProvider";
-import { cn } from "@turbocell/utils/utils";
-import TailwindResposivenessIndicator from "@turbocell/ui/components/TailwindResposivenessIndicator";
+import { ThemeProvider } from "@vintage/ui/components/ThemeProvider";
+import { cn } from "@vintage/utils/utils";
+import TailwindResposivenessIndicator from "@vintage/ui/components/TailwindResposivenessIndicator";
 import type { PropsWithChildren } from "react";
-import TrpcProvider from "@turbocell/api/trpc/Provider"
+import TrpcProvider from "@vintage/api/trpc/Provider"
 
 export const metadata: Metadata = {
   title: "Turbo Cell",

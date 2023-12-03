@@ -1,5 +1,5 @@
 {
-  "name": "@turbocell/api",
+  "name": "@vintage/api",
   "version": "0.0.0",
   "private": true,
   "main": "./index.ts",
@@ -17,15 +17,15 @@
     "@trpc/client": "^10.38.5",
     "@trpc/react-query": "^10.38.5",
     "@trpc/server": "^10.38.5",
-    "@turbocell/auth": "workspace:*",
-    "@turbocell/db": "workspace:*",
+    "@vintage/auth": "workspace:*",
+    "@vintage/db": "workspace:*",
     "react": "18.2.0",
     "superjson": "1.13.3",
     "zod": "^3.22.2"
   },
   "devDependencies": {
-    "@turbocell/eslint-config": "workspace:*",
-    "@turbocell/tsconfig": "workspace:*",
+    "@vintage/eslint-config": "workspace:*",
+    "@vintage/tsconfig": "workspace:*",
     "@types/react": "18.2.27",
     "@types/react-dom": "18.2.8",
     "eslint": "^8.50.0",
@@ -35,7 +35,7 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@turbocell/eslint-config/base"
+      "@vintage/eslint-config/base"
     ]
   }
 }

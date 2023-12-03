@@ -1,1 +1,1 @@
-module.exports = require("@turbocell/tailwind-config/postcss");
+module.exports = require("@vintage/tailwind-config/postcss");

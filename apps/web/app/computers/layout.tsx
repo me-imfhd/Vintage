@@ -1,5 +1,5 @@
 import { ProfileHeader } from "@/components/layout/profile-header";
-import { SiteFooter, SiteHeader } from "@turbocell/ui/layout";
+import { SiteFooter, SiteHeader } from "@vintage/ui/layout";
 import React from "react";
 
 

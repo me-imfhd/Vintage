@@ -1,7 +1,7 @@
 "use client";
 import { ComputerData } from "@/lib/client-side-hooks/ComputerData";
-import { trpc } from "@turbocell/api/trpc/client";
-import { Button, Shell } from "@turbocell/shadcn";
+import { trpc } from "@vintage/api/trpc/client";
+import { Button, Shell } from "@vintage/shadcn";
 import React, { useState } from "react";
 
 const Page = () => {

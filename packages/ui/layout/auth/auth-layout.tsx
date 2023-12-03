@@ -1,5 +1,5 @@
-import { AspectRatio } from "@turbocell/shadcn";
-import { Icons } from "@turbocell/utils/icons";
+import { AspectRatio } from "@vintage/shadcn";
+import { Icons } from "@vintage/utils/icons";
 import { Url } from "next/dist/shared/lib/router/router";
 import Image from "next/image";
 import Link from "next/link";

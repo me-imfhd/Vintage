@@ -1,6 +1,6 @@
 "use client";
-import { trpc } from "@turbocell/api/trpc/client";
-import { Button, Skeleton } from "@turbocell/shadcn";
+import { trpc } from "@vintage/api/trpc/client";
+import { Button, Skeleton } from "@vintage/shadcn";
 
 export function ComputerData() {
   const utils = trpc.useContext();

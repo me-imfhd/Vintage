@@ -2,8 +2,8 @@
 
 import * as React from "react";
 // import { menComponents,kidComponents, womenComponents, accessoriesComponent } from "@/config/products";
-import { cn } from "@turbocell/utils/utils";
-import { Icons } from "@turbocell/utils/icons";
+import { cn } from "@vintage/utils/utils";
+import { Icons } from "@vintage/utils/icons";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,7 +12,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@turbocell/shadcn/ui";
+} from "@vintage/shadcn/ui";
 import Link from "next/link";
 
 export function MainNav() {

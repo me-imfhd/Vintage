@@ -10,7 +10,7 @@ import {
   computerIdSchema,
   insertComputerParams,
   updateComputerParams,
-} from "@turbocell/db/schema/computers";
+} from "@vintage/db/schema/computers";
 export const computersRouter = createTRPCRouter({
   getComputers: publicProcedure.query(async () => {
     return getComputers();

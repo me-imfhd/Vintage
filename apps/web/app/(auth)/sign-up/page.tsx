@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "Authentication forms built using the components.",
 };
 
-import { Auth, SignUpForm, SignUpFooter } from "@turbocell/ui/layout";
+import { Auth, SignUpForm, SignUpFooter } from "@vintage/ui/layout";
 import OAuthSignIn from "../o-auth-signin";
 export default function Page() {
   return (

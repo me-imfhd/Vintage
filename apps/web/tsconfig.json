@@ -1,5 +1,5 @@
 {
-  "extends": "@turbocell/tsconfig/base.json",
+  "extends": "@vintage/tsconfig/base.json",
   "compilerOptions": {
     "target": "es5",
     "lib": [

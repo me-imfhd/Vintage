@@ -1,5 +1,5 @@
 {
-  "name": "@turbocell/eslint-config",
+  "name": "@vintage/eslint-config",
   "version": "0.2.0",
   "private": true,
   "license": "MIT",
@@ -27,7 +27,7 @@
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "@turbocell/tsconfig": "workspace:*",
+    "@vintage/tsconfig": "workspace:*",
     "eslint": "^8.50.0",
     "typescript": "^5.2.2"
   },

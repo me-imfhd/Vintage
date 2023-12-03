@@ -1,5 +1,5 @@
 {
-  "name": "@turbocell/tailwind-config",
+  "name": "@vintage/tailwind-config",
   "version": "0.0.0",
   "description": "",
   "main": "index.ts",
@@ -15,8 +15,8 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@turbocell/eslint-config": "workspace:*",
-    "@turbocell/tsconfig": "workspace:*",
+    "@vintage/eslint-config": "workspace:*",
+    "@vintage/tsconfig": "workspace:*",
     "@types/node": "20.8.0",
     "eslint": "^8.50.0",
     "prettier": "^3.0.3",
@@ -25,7 +25,7 @@
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@turbocell/eslint-config/base"
+      "@vintage/eslint-config/base"
     ]
   }
 }

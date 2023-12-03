@@ -1,13 +1,13 @@
 {
-  "name": "@turbocell/db",
+  "name": "@vintage/db",
   "version": "0.0.0",
   "main": "./index.ts",
   "types": "./index.ts",
   "license": "MIT",
   "scripts": {
-    "dev": "prisma studio",
-    "db:generate": "prisma generate",
-    "db:push": "prisma db push --skip-generate",
+    "db:studio": "dotenv -e ../../.env prisma db push prisma studio",
+    "db:generate": "dotenv -e ../../.env prisma db push prisma generate",
+    "db:push": "dotenv -e ../../.env prisma db push --skip-generate",
     "postinstall": "prisma generate"
   },
   "dependencies": {
@@ -16,18 +16,19 @@
   },
   "devDependencies": {
     "prisma": "^5.3.1", 
+    "dotenv-cli": "^7.2.1",
     "zod-prisma": "^0.5.4",
     "@types/node": "20.8.0",
     "eslint": "^8.50.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
-    "@turbocell/eslint-config": "workspace:*",
-    "@turbocell/tsconfig": "workspace:*"
+    "@vintage/eslint-config": "workspace:*",
+    "@vintage/tsconfig": "workspace:*"
   },
   "eslintConfig": {
     "root": true,
     "extends": [
-      "@turbocell/eslint-config/base"
+      "@vintage/eslint-config/base"
     ]
   }
 }

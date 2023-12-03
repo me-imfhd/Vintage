@@ -9,7 +9,7 @@ import {
   DefaultUser,
 } from "next-auth";
 
-import { CompleteSession, CompleteUser, db } from "@turbocell/db";
+import { CompleteSession, CompleteUser, db } from "@vintage/db";
 
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 export type { Session } from "next-auth";

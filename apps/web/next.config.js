@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ["@turbocell/api","@turbocell/ui", "@turbocell/utils","@turbocell/db", "@turbocell/shadcn", "@turbocell/auth"],
+  transpilePackages: ["@vintage/api","@vintage/ui", "@vintage/utils","@vintage/db", "@vintage/shadcn", "@vintage/auth"],
 };
 
 module.exports = nextConfig;

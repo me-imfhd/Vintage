@@ -1,5 +1,5 @@
 import { TRPCError } from "@trpc/server";
-import { db } from "@turbocell/db";
+import { db } from "@vintage/db";
 import {
   ComputerId,
   NewComputerParams,
@@ -7,7 +7,7 @@ import {
   updateComputerSchema,
   insertComputerParams,
   computerIdSchema,
-} from "@turbocell/db/schema/computers";
+} from "@vintage/db/schema/computers";
 
 export const createComputer = async (computer: NewComputerParams) => {
   const newComputer = insertComputerParams.parse({

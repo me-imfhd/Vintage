@@ -1,4 +1,4 @@
-import { authOptions } from "@turbocell/auth";
+import { authOptions } from "@vintage/auth";
 import NextAuth from "next-auth";
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-explicit-any */

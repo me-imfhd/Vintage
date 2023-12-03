@@ -1,4 +1,4 @@
-import { cn } from "@turbocell/utils/utils"
+import { cn } from "@vintage/utils/utils"
 
 function Skeleton({
   className,

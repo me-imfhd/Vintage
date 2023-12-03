@@ -3,9 +3,9 @@
 import React, { useState } from "react";
 import { toast } from "sonner";
 import { signIn } from "next-auth/react";
-import type { OAuthProviders } from "@turbocell/auth";
-import { Icons } from "@turbocell/utils/icons";
-import { Button } from "@turbocell/shadcn";
+import type { OAuthProviders } from "@vintage/auth";
+import { Icons } from "@vintage/utils/icons";
+import { Button } from "@vintage/shadcn";
 
 type OAuthProviderProps = {
   name: string;
