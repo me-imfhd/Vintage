@@ -36,5 +36,6 @@ yarn-error.log*
 # turbo
 .turbo
 
+HarborX Project Structure
 
 .env

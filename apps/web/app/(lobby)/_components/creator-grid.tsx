@@ -17,7 +17,7 @@ export function CreatorGrid() {
               alt=""
             />
             <div className="absolute h-full w-full bg-background/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <Button className=" py-2 px-5">Visit Pewdiepie's store</Button>
+              <Button className=" py-2 px-5">Visit Pewdiepie{"'"}s store</Button>
             </div>
           </div>
           <div className="relative overflow-hidden group">
@@ -27,7 +27,7 @@ export function CreatorGrid() {
               alt=""
             />
             <div className="absolute h-full w-full bg-background/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <Button className=" py-2 px-5">Visit Melinas's store</Button>
+              <Button className=" py-2 px-5">Visit Melinas{"'"}s store</Button>
             </div>
           </div>
           <div className="relative overflow-hidden group">
@@ -37,7 +37,7 @@ export function CreatorGrid() {
               alt=""
             />
             <div className="absolute h-full w-full bg-background/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <Button className=" py-2 px-5">Visit Harry's store</Button>
+              <Button className=" py-2 px-5">Visit Harry{"'"}s store</Button>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ export function CreatorGrid() {
               alt=""
             />
             <div className="absolute h-full w-full bg-background/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <Button className=" py-2 px-5">Visit Shauna's store</Button>
+              <Button className=" py-2 px-5">Visit Shauna{"'"}s store</Button>
             </div>
           </div>
           <div className="relative overflow-hidden group">
@@ -59,7 +59,7 @@ export function CreatorGrid() {
               alt=""
             />
             <div className="absolute h-full w-full bg-background/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <Button className=" py-2 px-5">Visit Peepepupu's store</Button>
+              <Button className=" py-2 px-5">Visit Peepepupu{"'"}s store</Button>
             </div>
           </div>
           <div className="relative overflow-hidden group">
@@ -69,7 +69,7 @@ export function CreatorGrid() {
               alt=""
             />
             <div className="absolute h-full w-full bg-background/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <Button className=" py-2 px-5">Visit Pewdiepie's store</Button>
+              <Button className=" py-2 px-5">Visit Pewdiepie{"'"}s store</Button>
             </div>
           </div>
         </div>
@@ -81,7 +81,7 @@ export function CreatorGrid() {
               alt=""
             />
             <div className="absolute h-full w-full bg-background/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <Button className=" py-2 px-5">Visit Pewdiepie's store</Button>
+              <Button className=" py-2 px-5">Visit Pewdiepie{"'"}s store</Button>
             </div>
           </div>
           <div className="relative overflow-hidden group">
@@ -91,7 +91,7 @@ export function CreatorGrid() {
               alt=""
             />
             <div className="absolute h-full w-full bg-background/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <Button className=" py-2 px-5">Visit Pewdiepie's store</Button>
+              <Button className=" py-2 px-5">Visit Pewdiepie{"'"}s store</Button>
             </div>
           </div>
           <div className="relative overflow-hidden group">
@@ -101,7 +101,7 @@ export function CreatorGrid() {
               alt=""
             />
             <div className="absolute h-full w-full bg-background/20 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-              <Button className=" py-2 px-5">Visit Pewdiepie's store</Button>
+              <Button className=" py-2 px-5">Visit Pewdiepie{"'"}s store</Button>
             </div>
           </div>
         </div>
