@@ -1,5 +1,13 @@
 import { Icons } from "../icons";
 
+type FooterNavProps = {
+  title: string;
+  items: {
+    title: string;
+    href: string;
+    external: boolean;
+  }[];
+};
 type MySocialsProps = {
   title: string;
   href: string;
@@ -28,6 +36,101 @@ export const Company = [
     external: false,
   }
 ]
+export const SiteConfig = {
+  footerNav: [
+    {
+      title: "Get Started",
+      items: [
+        {
+          title: "Login",
+          href: "/sign-in",
+          external: false,
+        },
+        {
+          title: "Start creating",
+          href: "/store",
+          external: false,
+        },
+        {
+          title: "How it works",
+          href: "/how",
+          external: false,
+        },
+        {
+          title: "FAQ",
+          href: "/faq",
+          external: false,
+        },
+      ],
+    },
+    {
+      title: "Categories",
+      items: [
+        {
+          title: "Men",
+          href: "/about",
+          external: false,
+        },
+        {
+          title: "Women",
+          href: "/contact",
+          external: false,
+        },
+        {
+          title: "Kids",
+          href: "/terms",
+          external: false,
+        },
+        {
+          title: "Accessories",
+          href: "/privacy",
+          external: false,
+        },
+      ],
+    },
+    {
+      title: "Integrations",
+      items: [
+        {
+          title: "Instagram",
+          href: "/about",
+          external: false,
+        },
+        {
+          title: "Youtube",
+          href: "/contact",
+          external: false,
+        },
+        {
+          title: "Tiktok",
+          href: "/terms",
+          external: false,
+        },
+        {
+          title: "Snapchat",
+          href: "/privacy",
+          external: false,
+        },
+      ],
+    },
+    {
+      title: "Credits",
+      items: [
+        {
+          title: "Skateshop",
+          href: "https://skateshop.sadmn.com/",
+          external: true,
+        },
+        {
+          title: "Shadcn/ui",
+          href: "/contact",
+          external: true,
+        },
+      ],
+    },
+    
+  ] satisfies FooterNavProps[],
+};
 export const mySocials: MySocialsProps[] = [
   {
     title: "Github",
