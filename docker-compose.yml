@@ -2,37 +2,16 @@ version: "3.8"
 
 services:
   db:
-    image: bitnami/mysql:latest
-    container_name: vintage-db
+    image: postgres:latest
+    ports:
+      - 5432:5432
     restart: always
     environment:
-      MYSQL_ROOT_USER: dev
-      MYSQL_ROOT_PASSWORD: dev
-      MYSQL_DATABASE: vintage
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
-      timeout: 20s
-      retries: 10
-    # create a volume for the docker container_name
+      POSTGRES_USER: dev
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: vintage
     volumes:
-      - vintage-data:/bitnami/mysql/data
-    ports:
-      - 3301:3306
-
-  # web:
-  #   env_file: .env
-  #   container_name: web
-  #   build:
-  #     context: .
-  #     dockerfile: ./apps/web/Dockerfile
-  #   restart: always
-  #   expose:
-  #     - 3000
-  #   ports:
-  #     - 3000:3000
-
-# Define a network, which allows containers to communicate
-# with each other, by using their container name as a hostname
+      - db:/var/lib/postgresql/data
 volumes:
-  vintage-data:
+  db:
     driver: local
