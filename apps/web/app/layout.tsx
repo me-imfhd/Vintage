@@ -9,7 +9,7 @@ import type { PropsWithChildren } from "react";
 import TrpcProvider from "@vintage/api/trpc/Provider"
 
 export const metadata: Metadata = {
-  title: "Turbo Cell",
+  title: "Vintage",
   description:
     "",
   themeColor: [
