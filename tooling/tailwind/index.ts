@@ -4,7 +4,6 @@ import { fontFamily } from "tailwindcss/defaultTheme";
 export default {
   darkMode: ["class"],
   content: [
-    "../../apps/dashboard/**/*.{ts,tsx}",
     "../../apps/web/**/*.{ts,tsx}",
     "../../packages/ui/**/*.{ts,tsx}",
     "../../packages/shadcn/**/*.{ts,tsx}",
