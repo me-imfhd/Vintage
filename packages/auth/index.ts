@@ -1,17 +1,21 @@
 import DiscordProvider from "next-auth/providers/discord";
 import GoogleProvider from "next-auth/providers/google";
 import FacebookProvider from "next-auth/providers/facebook";
+import type { CookieSerializeOptions } from "cookie";
 
+import { WEBAPP_URL } from "@vintage/utils";
 import {
   getServerSession,
   type DefaultSession,
   type NextAuthOptions,
   DefaultUser,
+  CookieOption,
 } from "next-auth";
 
 import { CompleteSession, CompleteUser, db } from "@vintage/db";
 
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
+import { defaultCookies } from "./default-cookies";
 export type { Session } from "next-auth";
 export type OAuthProviders = (typeof providers)[number];
 
@@ -32,6 +36,11 @@ declare module "next-auth" {
 }
 // Update this whenever adding new providers so that the client can
 export const providers = ["discord", "google", "facebook"] as const;
+
+const isProd = process.env.NODE_ENV === "production";
+const domain = isProd ? ".vintage-khaki.com" : "localhost";
+const secure = isProd;
+
 export const authOptions: NextAuthOptions = {
   adapter: PrismaAdapter(db as any),
   // any?! I know.
@@ -43,6 +52,8 @@ export const authOptions: NextAuthOptions = {
     signOut: "/sign-out",
     // newUser: ""
   },
+  cookies: defaultCookies(WEBAPP_URL?.startsWith("https://")),
+
   providers: [
     DiscordProvider({
       clientId: process.env.DISCORD_CLIENT_ID as string,
@@ -98,7 +109,7 @@ export const authOptions: NextAuthOptions = {
 // }
 
 export type { User } from "next-auth";
-export {getServerSession} from "next-auth";
+export { getServerSession } from "next-auth";
 export async function getUser() {
   try {
     const session = await getServerSession(authOptions);

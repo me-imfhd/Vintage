@@ -14,7 +14,7 @@ export default function TrpcProvider({ children }: PropsWithChildren) {
       transformer: SuperJSON,
       links: [
         httpBatchLink({
-          url: getUrl(),
+          url: 'http://localhost:3000/api/trpc',
         }),
       ],
     })
