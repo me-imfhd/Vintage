@@ -1,0 +1,1 @@
+module.exports = require("@vintage/tailwind-config/postcss");
