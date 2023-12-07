@@ -20,8 +20,16 @@ declare module "next-auth" {
 }
 
 const useSecureCookies = process.env.VERCEL_ENV === "production";
-const cookiePrefix = useSecureCookies ? "__Secure-" : "";
-const cookieDomain = useSecureCookies ? "vintage-khaki.vercel.app" : undefined;
+
+const hostname =
+  process.env.NEXT_PUBLIC_DEPLOYMENT_ENV === "production"
+    ? "vintage-khaki.vercel.app"
+    : "localhost";
+
+export function getNextAuthCookieName() {
+  const cookiePrefix = process.env.NODE_ENV === "production" ? "__Secure-" : "";
+  return `${cookiePrefix}next-auth.session-token`;
+}
 
 export const {
   handlers: { GET, POST },
@@ -30,12 +38,12 @@ export const {
   secret: "OafH8Gbo61XPn4YEh+b5onT4ARJOe+gH2aaUF93UfPM=",
   cookies: {
     sessionToken: {
-      name: `${cookiePrefix}next-auth.session-token`,
+      name: getNextAuthCookieName(),
       options: {
         httpOnly: true,
         sameSite: "lax",
         path: "/",
-        domain: cookieDomain,
+        domain: "." + hostname,
         secure: useSecureCookies,
       },
     },

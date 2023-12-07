@@ -25,6 +25,7 @@
     "next": "14.0.3"
   },
   "devDependencies": {
+    "@trpc/server": "^10.38.5",
     "@vintage/eslint-config": "workspace:*",
     "@vintage/tsconfig": "workspace:*",
     "typescript": "^5",
