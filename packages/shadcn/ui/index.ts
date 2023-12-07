@@ -11,4 +11,4 @@ export * from "./navigation-menu";
 export * from "./popover";
 export * from "./skeleton";
 export * from "./toaster";
-
+export * from  "./tooltip"

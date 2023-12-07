@@ -9,8 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@vintage/tailwind-config":"workspace:*",
-    "@vintage/utils": "workspace:*",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
     "@radix-ui/react-avatar": "^1.0.4",
     "@radix-ui/react-dialog": "^1.0.5",
@@ -19,6 +17,9 @@
     "@radix-ui/react-navigation-menu": "^1.1.4",
     "@radix-ui/react-popover": "^1.0.7",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-tooltip": "^1.0.7",
+    "@vintage/tailwind-config": "workspace:*",
+    "@vintage/utils": "workspace:*",
     "class-variance-authority": "^0.7.0",
     "cmdk": "^0.2.0",
     "lucide-react": "^0.284.0",
@@ -26,11 +27,12 @@
     "sonner": "^1.0.3"
   },
   "devDependencies": {
-    "@vintage/tsconfig": "workspace:*",
     "@types/react": "18.2.27",
     "@types/react-dom": "^18.2.11",
+    "@vintage/tsconfig": "workspace:*",
     "eslint": "^8.50.0",
     "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.6",
     "typescript": "^5.2.2"
   }
 }
