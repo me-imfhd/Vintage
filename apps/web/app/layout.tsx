@@ -6,12 +6,12 @@ import { ThemeProvider } from "@vintage/ui/components/ThemeProvider";
 import { cn } from "@vintage/utils/utils";
 import TailwindResposivenessIndicator from "@vintage/ui/components/TailwindResposivenessIndicator";
 import type { PropsWithChildren } from "react";
-import TrpcProvider from "@vintage/api/trpc/Provider"
+import TrpcProvider from "@vintage/api/trpc/Provider";
+import { SessionProvider } from "@vintage/auth";
 
 export const metadata: Metadata = {
   title: "Vintage",
-  description:
-    "",
+  description: "",
   themeColor: [
     { media: "(prefers-color-scheme: light", color: "white" },
     { media: "(prefers-color-scheme: dark", color: "black" },
@@ -28,13 +28,15 @@ export default function RootLayout({ children }: PropsWithChildren) {
           fontMono.variable
         )}
       >
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <SessionProvider>
             <TrpcProvider>
-            {children}
-            <TailwindResposivenessIndicator />
-            <Toaster />
+              {children}
+              <TailwindResposivenessIndicator />
+              <Toaster />
             </TrpcProvider>
-          </ThemeProvider>
+          </SessionProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,12 +1,12 @@
-import { authOptions } from "@vintage/auth";
-import { getServerSession } from "next-auth";
+
 import React from "react";
 import { UserProfileDropdown } from "@vintage/ui/layout/vintage";
 import Link from "next/link";
 import { buttonVariants } from "@vintage/shadcn/ui";
+import { auth } from "@vintage/auth";
 
 export const ProfileHeader = async () => {
-  const data = await getServerSession(authOptions);
+  const data = await auth();
   const user = data?.user;
   const initials = `${user?.name?.charAt(0) ?? ""}`;
   return (
