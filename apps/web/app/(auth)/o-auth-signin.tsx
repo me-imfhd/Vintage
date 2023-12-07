@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import { toast } from "sonner";
-import { signIn, type OAuthProviders } from "@vintage/auth";
+import { signIn} from "@vintage/auth";
+import type { OAuthProviders } from "@vintage/auth"; 
 import { Icons } from "@vintage/utils/icons";
 import { Button } from "@vintage/shadcn";
 
