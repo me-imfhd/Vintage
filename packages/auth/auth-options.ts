@@ -23,7 +23,7 @@ const useSecureCookies = process.env.VERCEL_ENV === "production";
 
 const hostname =
   process.env.NEXT_PUBLIC_DEPLOYMENT_ENV === "production"
-    ? "vintage-khaki.vercel.app"
+    ? "vintage-me-imfhd.vercel.app"
     : "localhost";
 
 export function getNextAuthCookieName() {
