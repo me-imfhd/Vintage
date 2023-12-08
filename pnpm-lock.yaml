@@ -14,6 +14,9 @@ importers:
       '@turbo/gen':
         specifier: ^1.10.14
         version: 1.10.14(@types/node@20.8.0)(typescript@5.2.2)
+      '@types/node':
+        specifier: ^20
+        version: 20.8.0
       '@vintage/eslint-config':
         specifier: workspace:*
         version: link:tooling/eslint
