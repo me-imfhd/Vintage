@@ -5,6 +5,7 @@
   "types": "./index.ts",
   "license": "MIT",
   "scripts": {
+    "dotenv": "dotenv",
     "db:studio": "dotenv -e ../../.env prisma db push prisma studio",
     "db:generate": "dotenv -e ../../.env prisma generate",
     "db:push": "dotenv -e ../../.env prisma db push --skip-generate",
@@ -15,15 +16,15 @@
     "zod": "^3.22.2"
   },
   "devDependencies": {
-    "prisma": "^5.3.1", 
-    "dotenv-cli": "^7.2.1",
-    "zod-prisma": "^0.5.4",
     "@types/node": "20.8.0",
+    "@vintage/eslint-config": "workspace:*",
+    "@vintage/tsconfig": "workspace:*",
+    "dotenv-cli": "^7.3.0",
     "eslint": "^8.50.0",
     "prettier": "^3.0.3",
+    "prisma": "^5.3.1",
     "typescript": "^5.2.2",
-    "@vintage/eslint-config": "workspace:*",
-    "@vintage/tsconfig": "workspace:*"
+    "zod-prisma": "^0.5.4"
   },
   "eslintConfig": {
     "root": true,
